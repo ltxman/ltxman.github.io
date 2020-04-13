@@ -39,7 +39,7 @@
         @media (max-width: 768px) {
             body {
                 background-color: #f0f0f0;
-                background: url('/imgs/xsbg.gif');
+                background: url('/imgs/sj.png -&gt; source/imgs/sj.png');
                 background-attachment: fixed;
             }
         }
@@ -48,7 +48,7 @@
     <!--<script type="text/javascript">
       if (document.images) {
         var avatar = new Image();
-        avatar.src = '/imgs/avatar.jpg'
+        avatar.src = '/imgs/tx.png%20-%3E%20source/imgs/tx.png'
         var previews = 'preview1.jpg,preview2.jpg,preview3.jpg,preview4.jpg'.split(',')
         var previewsPreLoad = []
         for(var i = 0; i < length; i++) {
@@ -71,6 +71,25 @@
     </ul>
 </section>
     <!-- 欧尼酱功能, 谁用谁知道 -->
+    
+    <div class="gal-menu gal-dropdown">
+    <div class="circle" id="gal">
+        <div class="ring">
+            <a href="http://yoursite.com" class="menuItem" style="left: 50%; top: 15%;">首页</a>
+            
+            <a class="menuItem" style="left: 80.3109%; top: 32.5%;">下一页</a>
+            
+            <a href="/archives" class="menuItem" style="left: 80.3109%; top: 67.5%;">归档</a>
+            <a href="/about" class="menuItem" style="left: 50%; top: 85%;">关于</a>
+            <a href="/message" class="menuItem" style="left: 19.6891%; top: 67.5%;">留言板</a>
+
+            
+            <a class="menuItem" style="left: 19.6891%; top: 32.5%;">上一页</a>
+            
+        </div>
+        <audio id="audio" src="/imgs/oni.mp3"></audio>
+    </div>
+</div>
     
     <header class="navbar navbar-inverse" id="gal-header">
     <div class="container">
@@ -214,7 +233,7 @@
                 <a href="/2020/04/13/%E6%95%B0%E5%88%B6%E5%8F%8A%E8%BD%AC%E6%8D%A2/">
                     <div class="img">
                         
-                        <img src="/imgs/preview/preview1.jpg" alt="数制及转换">
+                        <img src="/imgs/preview/preview2.jpg" alt="数制及转换">
                     </div>
                     <div class="info">
                         <h1 id="数制及转换"><a href="#数制及转换" class="headerlink" title="数制及转换"></a>数制及转换</h1><h2 id="一、数制"><a href="#一、数制" class="headerlink" title="一、数制"></a>一、<span style='color:red;'>数制</span></h2><p>N进制数由N个数组成（0,1，…，N-1）组成，基数为N，逢N进一。</p>
@@ -332,7 +351,7 @@
             <p style="text-align: center;">
                 <a href="/2020/04/13/hello-world/">
                     
-                    <img src="/imgs/preview/preview2.jpg" alt="Hello World">
+                    <img src="/imgs/preview/preview1.jpg" alt="Hello World">
                 </a>
             </p>
         </div>
@@ -370,6 +389,8 @@
 </div>
 
 <!-- 加上这段代码原因： gitment在首页加载时, 如果找不到对应的控件会报错，此处加上，同时设置为none，防止报错 -->   
+  
+    <div id="comments-template" style="display:none"></div> 
 
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
@@ -393,7 +414,7 @@
             <i class="fa fa-quote-right"></i>
         </div>
         <div class="author-panel text-center">
-            <img src="/imgs/avatar.jpg" width="140" height="140"
+            <img src="/imgs/tx.png%20-%3E%20source/imgs/tx.png" width="140" height="140"
                  alt="个人头像" class="author-image">
             <p class="author-description"><p>想你所想</p>
 </p>
@@ -495,7 +516,7 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/%E6%95%B0%E7%94%B5/" style="font-size: 18.03788483812069px;" class="tag-cloud-link">数电</a>
+    <a href="/tags/%E6%95%B0%E7%94%B5/" style="font-size: 18.413763629566013px;" class="tag-cloud-link">数电</a>
     
 </div>
                 
@@ -606,6 +627,34 @@
 <script src="/js/blog.js"></script>
 
 
+
+<script src="/js/oni.js"></script>
+
+
+
+
+<script src="https://myau.moe/js/comment/gitment.browser.js"></script>
+<script>
+    if(window.commentConfig) {
+      window.commentConfig.id = ''
+      window.commentConfig.owner = 'ltxman# 必填项, 你的GitHub ID'
+      window.commentConfig.repo = 'ltxman.github.io# 必填项  你的存储评论的repo'
+      window.commentConfig.client_id = '4dc20944aeef9509dbb0'
+      window.commentConfig.client_secret = '5eb3966edbc2d0dedec89d392be374b8d0225168# 必填项'
+      window.commentConfig.redirect_uri = ''
+    } else {
+      window.commentConfig = {
+      	id: '',
+        owner: 'ltxman# 必填项, 你的GitHub ID',
+        repo: 'ltxman.github.io# 必填项  你的存储评论的repo',
+        client_id: '4dc20944aeef9509dbb0',
+        client_secret: '5eb3966edbc2d0dedec89d392be374b8d0225168# 必填项',
+        redirect_uri: ''
+      }
+    }
+</script>
+
+<script src="/js/comment/gitment.js"></script>
 
 
 </html>
